@@ -14,6 +14,7 @@ module Cheatly
 
     def codespan(code)
       "`#{code}`"
+      "<#{code.bold.colorize(:color => :light_cyan)}>"
     end
 
     def header(title, level)
